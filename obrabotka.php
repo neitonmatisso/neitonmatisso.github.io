@@ -60,9 +60,9 @@
     if (!isset($_SESSION["rows"])) $_SESSION["rows"] = array();
     date_default_timezone_set('Europe/Moscow');
 
-    $x = $_POST["coordinateX"];
-    $y = $_POST["coordinateY"];
-    $r = $_POST["coordinateR"];
+    $x = $_GET["coordinateX"];
+    $y = $_GET["coordinateY"];
+    $r = $_GET["coordinateR"];
 
     $time = date("H:i:s");
     $exec = round( (microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"]), 5);
